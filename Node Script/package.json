@@ -1,0 +1,15 @@
+{
+  "name": "three-digit-nixie-macropad",
+  "version": "1.0.0",
+  "description": "Node script to communicate with QMK keyboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "klef",
+  "license": "MIT",
+  "dependencies": {
+    "win-audio" : "2.0.2",
+    "node-hid": "2.1.2"
+  }
+}
