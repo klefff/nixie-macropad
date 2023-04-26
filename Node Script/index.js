@@ -23,28 +23,9 @@ const KEYBOARD_USAGE_PAGE = 0xFF60;
 // Code Setup
 const KEYBOARD_UPDATE_TIME = 100;
 let keyboard = null;
-const TUBE_REFRESH_INTERVAL = 810000;
-var tubeRefreshTimer = 0;
+//const TUBE_REFRESH_INTERVAL = 810000;
+//var tubeRefreshTimer = 0;
 
-// Helper function to wait a few milliseconds using a promise
-function wait(ms) {
-    return new Promise((resolve) => {
-        setTimeout(resolve, ms);
-    })
-}
-
-// Tube Protection 
-async function protectTubes() {
-    //Every 15 mins let the other tubes light up
-    if (keyboard) {
-        keyboard.write([0, 1, 34, -1, 0]);
-        await setTimeout(1000);
-        for (let i = 0; i < 10 ; i++) {
-            keyboard.write([0, 1, 34, i*11, 0]);
-            await setTimeout(100);
-        }
-    }
-}
 
 // Update Keyboard
 function updateKeyboard() {
@@ -64,7 +45,6 @@ function updateKeyboard() {
             if (d.product === KEYBOARD_NAME && d.usage === KEYBOARD_USAGE_ID && d.usagePage === KEYBOARD_USAGE_PAGE) {
                 // Create a new connection and store it as the keyboard
                 keyboard = new hid.HID(d.path);
-                //protectTubes();
                 keyboard.write([0, 1, 34, cur_vol, 2]);
                 break;
             }
@@ -74,15 +54,14 @@ function updateKeyboard() {
         // The target keyboard is found
 
         //Increment Refresh Timer
-        tubeRefreshTimer = tubeRefreshTimer + KEYBOARD_UPDATE_TIME;
-        if (tubeRefreshTimer == TUBE_REFRESH_INTERVAL)
-        {
-            keyboard.write([0, 1, 34, cur_vol, 2]);
-            if (cur_mute)
-                keyboard.write([0, 1,34, cur_vol, 1]);
-            tubeRefreshTimer = 0;
-        }
-        //console.log(tubeRefreshTimer);
+        // tubeRefreshTimer = tubeRefreshTimer + KEYBOARD_UPDATE_TIME;
+        // if (tubeRefreshTimer == TUBE_REFRESH_INTERVAL)
+        // {
+        //     keyboard.write([0, 1, 34, cur_vol, 2]);
+        //     if (cur_mute)
+        //         keyboard.write([0, 1,34, cur_vol, 1]);
+        //     tubeRefreshTimer = 0;
+        // }
         // Check if the mute status has changed. This take priority over volume display 
         if (cur_mute != prev_mute)
             {
