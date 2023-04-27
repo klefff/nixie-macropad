@@ -1,4 +1,8 @@
 # nixie-macropad
+
+![Main](/Images/mainphoto.PNG)
+
+
 Simple 2x3 macropad with encoder that has a 3 digit nixie tube display that can be programmed for various functions over QMK.
 
 ## Usage:
@@ -22,7 +26,8 @@ Feel free to try replicate with care, as this is an unpolished proof of concept 
 
 ### QMK:
 1. You need to flash the Pro Micro with custom QMK firmware
-    - Fork: Link In Progress
+    - Fork: [Use my fork](https://github.com/klefff/qmk_firmware/)
+    - How to flash: [QMK Docs](https://docs.qmk.fm/#/newbs_flashing)
 
 ## Hardware:
 ### Before Assembling:
@@ -31,9 +36,13 @@ Feel free to try replicate with care, as this is an unpolished proof of concept 
     - Or follow their [recommended method](https://github.com/dekuNukem/exixe/blob/master/getting_started.md)
 ### Assembly
 1. Make the custom PCBs (needs 2, or make a case)
+    ![PCB](/Images/pcbfront.PNG)![PCB](/Images/pcbrear.PNG)
 1. Solder on the required components below (see pictures)
 1. Assemble such that two of the custom PCBs make a basic case thing
 1. Choose some cool keycaps and knob
+
+![PCB](/Images/mcfront.PNG)
+![PCB](/Images/mcback.PNG)
 
 ## Bill of Materials:
 - 2x Custom PCBS
@@ -65,6 +74,16 @@ Feel free to try replicate with care, as this is an unpolished proof of concept 
     - For the above 2, you can also just get 7 pin ones and take out the middle 4 pins
 - Some keycaps
 - An encoder knob
+
+## Additional:
+### Housekeeping:
+- Every ~15 mins the tubes will cycle all digits to reduce change of cathode poisoning
+
+### Future Work:
+- Possible adding VIA capabilities for flashing
+- Adding more uses for the 3 tube digits; current weather, CPU usage etc
+- Adding another digit for RTC time
+- Bluetooth/Wireless with battery
 
 ## References:
 - [Exixe](https://github.com/dekuNukem/exixe)
