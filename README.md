@@ -1,9 +1,6 @@
 # nixie-macropad
 
-![Main](/Images/mainphoto.PNG)
-
-<p style="text-align:center;"><img src="/Images/mainphoto.PNG" width="500" ></p>
-
+<img src="/Images/mainphoto.PNG" width="400" ></p>
 
 Simple 2x3 macropad with encoder that has a 3 digit nixie tube display that can be programmed for various functions over QMK.
 
@@ -38,13 +35,14 @@ Feel free to try replicate with care, as this is an unpolished proof of concept 
     - Or follow their [recommended method](https://github.com/dekuNukem/exixe/blob/master/getting_started.md)
 ### Assembly
 1. Make the custom PCBs (needs 2, or make a case)
-    ![PCB](/Images/pcbfront.PNG)![PCB](/Images/pcbrear.PNG)
+    !<img src="/Images/pcbfront.PNG" width="400" ></p>
+    !<img src="/Images/pcbrear.PNG" width="400" ></p>
 1. Solder on the required components below (see pictures)
 1. Assemble such that two of the custom PCBs make a basic case thing
 1. Choose some cool keycaps and knob
 
-![PCB](/Images/mcfront.PNG)
-![PCB](/Images/mcback.PNG)
+<img src="/Images/mcfront.PNG" width="400" ></p>
+<img src="/Images/mcbackhoto.PNG" width="400" ></p>
 
 ## Bill of Materials:
 - 2x Custom PCBS
