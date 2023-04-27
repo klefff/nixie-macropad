@@ -35,14 +35,14 @@ Feel free to try replicate with care, as this is an unpolished proof of concept 
     - Or follow their [recommended method](https://github.com/dekuNukem/exixe/blob/master/getting_started.md)
 ### Assembly
 1. Make the custom PCBs (needs 2, or make a case)
-    !<img src="/Images/pcbfront.PNG" width="400" ></p>
-    !<img src="/Images/pcbrear.PNG" width="400" ></p>
 1. Solder on the required components below (see pictures)
 1. Assemble such that two of the custom PCBs make a basic case thing
 1. Choose some cool keycaps and knob
 
+<img src="/Images/pcbfront.PNG" width="400" ></p>
+<img src="/Images/pcbrear.PNG" width="400" ></p>
 <img src="/Images/mcfront.PNG" width="400" ></p>
-<img src="/Images/mcbackhoto.PNG" width="400" ></p>
+<img src="/Images/mcback.PNG" width="400" ></p>
 
 ## Bill of Materials:
 - 2x Custom PCBS
