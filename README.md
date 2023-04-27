@@ -27,6 +27,7 @@ Feel free to try replicate with care, as this is an unpolished proof of concept 
 1. You need to flash the Pro Micro with custom QMK firmware
     - Fork: [Use my fork](https://github.com/klefff/qmk_firmware/)
     - How to flash: [QMK Docs](https://docs.qmk.fm/#/newbs_flashing)
+1. Build for [Phi (Default)](https://github.com/klefff/qmk_firmware/tree/master/keyboards/phi)
 
 ## Hardware:
 ### Before Assembling:
