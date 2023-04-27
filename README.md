@@ -1,7 +1,7 @@
 # nixie-macropad
 
 ![Main](/Images/mainphoto.PNG)
-<img src="/Images/mainphoto.PNG" width="200" height="100">
+<img src="/Images/mainphoto.PNG" width="500">
 
 
 Simple 2x3 macropad with encoder that has a 3 digit nixie tube display that can be programmed for various functions over QMK.
